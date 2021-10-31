@@ -1,11 +1,13 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
+import StackNavigation from './navigation/StackNavigation';
 
-const App: React.ReactNode = () => {
+const App = () => {
   return (
-    <View>
-      <Text>Hello</Text>
-    </View>
+    <React.Fragment>
+      <StatusBar />
+      <StackNavigation />
+    </React.Fragment>
   );
 };
 

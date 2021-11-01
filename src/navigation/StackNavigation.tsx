@@ -8,7 +8,12 @@ const Stack = createNativeStackNavigator();
 const StackNavigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="bottomtab">
+      <Stack.Navigator
+        initialRouteName="bottomtab"
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         <Stack.Screen name="bottomtab" component={BottomTab} />
       </Stack.Navigator>
     </NavigationContainer>

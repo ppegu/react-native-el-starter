@@ -1,13 +1,14 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
+import { ThemeProvider } from './contexts/ThemeContext';
 import StackNavigation from './navigation/StackNavigation';
 
 const App = () => {
   return (
-    <React.Fragment>
+    <ThemeProvider>
       <StatusBar />
       <StackNavigation />
-    </React.Fragment>
+    </ThemeProvider>
   );
 };
 
